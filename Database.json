@@ -1,0 +1,46 @@
+{
+    "name": "Services",
+    "tables": [
+        {
+            "name": "Packages",
+            "columns": [
+                {
+                    "name": "Title",
+                    "isUnique": true
+                },
+                {
+                    "name": "Subtitle"
+                }
+            ]
+        },
+        {
+            "name": "Features",
+            "columns": [
+                {
+                    "name": "Title",
+                    "isUnique": true
+                }
+            ]
+        },
+        {
+            "name": "PackageFeatures",
+            "columns": [
+                {
+                    "name": "PackageId"
+                },
+                {
+                    "name": "FeatureId"
+                }
+            ]
+        }
+    ],
+    "views": [
+        {
+            "name": "PackageFeatureViews",
+            "query": [
+                "select *",
+                "from PackageFeatures"
+            ]
+        }
+    ]
+}
