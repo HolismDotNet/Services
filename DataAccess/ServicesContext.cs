@@ -1,4 +1,4 @@
-namespace Holism.Services.DataAccess;
+namespace Services;
 
 public class ServicesContext : DatabaseContext
 {

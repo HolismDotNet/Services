@@ -1,36 +1,36 @@
-namespace Holism.Services.DataAccess;
+namespace Services;
 
 public class Repository
 {
-    public static Repository<Feature> Feature
+    public static Repository<Services.Feature> Feature
     {
         get
         {
-            return new Repository<Feature>(new ServicesContext());
+            return new Repository<Services.Feature>(new ServicesContext());
         }
     }
 
-    public static Repository<PackageFeature> PackageFeature
+    public static Repository<Services.PackageFeature> PackageFeature
     {
         get
         {
-            return new Repository<PackageFeature>(new ServicesContext());
+            return new Repository<Services.PackageFeature>(new ServicesContext());
         }
     }
 
-    public static Repository<PackageFeatureView> PackageFeatureView
+    public static Repository<Services.PackageFeatureView> PackageFeatureView
     {
         get
         {
-            return new Repository<PackageFeatureView>(new ServicesContext());
-        }
-    }    public static Repository<Package> Package
-    {
-        get
-        {
-            return new Repository<Package>(new ServicesContext());
+            return new Repository<Services.PackageFeatureView>(new ServicesContext());
         }
     }
 
-
+    public static Repository<Services.Package> Package
+    {
+        get
+        {
+            return new Repository<Services.Package>(new ServicesContext());
+        }
+    }
 }

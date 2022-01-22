@@ -1,4 +1,4 @@
-namespace Holism.Services.Models;
+namespace Services;
 
 public class PackageFeature : IEntity
 {
