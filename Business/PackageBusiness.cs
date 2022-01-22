@@ -1,6 +1,4 @@
-
-
-namespace Holism.Services.Business;
+namespace Services;
 
 public class PackageBusiness : Business<Package, Package>
 {
