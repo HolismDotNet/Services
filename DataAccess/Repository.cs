@@ -1,53 +1,36 @@
-using Holism.Services.Models;
-using Holism.DataAccess;
+namespace Holism.Services.DataAccess;
 
-namespace Holism.Services.DataAccess
+public class Repository
 {
-    public class Repository
+    public static Repository<Feature> Feature
     {
-        public static Repository<Ticket> Ticket
+        get
         {
-            get
-            {
-                return new Holism.DataAccess.Repository<Ticket
-                >(new ServicesContext());
-            }
-        }
-
-        public static Repository<Post> Post
-        {
-            get
-            {
-                return new Holism.DataAccess.Repository<Post
-                >(new ServicesContext());
-            }
-        }
-
-        public static Repository<PostHtml> PostHtml
-        {
-            get
-            {
-                return new Holism.DataAccess.Repository<PostHtml
-                >(new ServicesContext());
-            }
-        }
-
-        public static Repository<AttachedFile> AttachedFile
-        {
-            get
-            {
-                return new Holism.DataAccess.Repository<AttachedFile
-                >(new ServicesContext());
-            }
-        }
-
-        public static Repository<TicketView> TicketView
-        {
-            get
-            {
-                return new Holism.DataAccess.Repository<TicketView
-                >(new ServicesContext());
-            }
+            return new Repository<Feature>(new ServicesContext());
         }
     }
+
+    public static Repository<PackageFeature> PackageFeature
+    {
+        get
+        {
+            return new Repository<PackageFeature>(new ServicesContext());
+        }
+    }
+
+    public static Repository<PackageFeatureView> PackageFeatureView
+    {
+        get
+        {
+            return new Repository<PackageFeatureView>(new ServicesContext());
+        }
+    }    public static Repository<Package> Package
+    {
+        get
+        {
+            return new Repository<Package>(new ServicesContext());
+        }
+    }
+
+
 }
