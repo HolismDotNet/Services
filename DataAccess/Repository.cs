@@ -2,35 +2,35 @@ namespace Services;
 
 public class Repository
 {
-    public static Repository<Services.Feature> Feature
+    public static Write<Services.Feature> Feature
     {
         get
         {
-            return new Repository<Services.Feature>(new ServicesContext());
+            return new Write<Services.Feature>(new ServicesContext());
         }
     }
 
-    public static Repository<Services.PackageFeature> PackageFeature
+    public static Write<Services.PackageFeature> PackageFeature
     {
         get
         {
-            return new Repository<Services.PackageFeature>(new ServicesContext());
+            return new Write<Services.PackageFeature>(new ServicesContext());
         }
     }
 
-    public static Repository<Services.PackageFeatureView> PackageFeatureView
+    public static Write<Services.PackageFeatureView> PackageFeatureView
     {
         get
         {
-            return new Repository<Services.PackageFeatureView>(new ServicesContext());
+            return new Write<Services.PackageFeatureView>(new ServicesContext());
         }
     }
 
-    public static Repository<Services.Package> Package
+    public static Write<Services.Package> Package
     {
         get
         {
-            return new Repository<Services.Package>(new ServicesContext());
+            return new Write<Services.Package>(new ServicesContext());
         }
     }
 }
