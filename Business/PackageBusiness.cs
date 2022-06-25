@@ -2,7 +2,7 @@ namespace Services;
 
 public class PackageBusiness : Business<Package, Package>
 {
-    protected override ReadRepository<Package> ReadRepository => Repository.Package;
+    protected override Read<Package> Read => Repository.Package;
 
-    protected override Repository<Package> WriteRepository => Repository.Package;
+    protected override Write<Package> Write => Repository.Package;
 }
